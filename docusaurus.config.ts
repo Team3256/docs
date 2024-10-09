@@ -81,7 +81,7 @@ const config: Config = {
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/team3256/docs",
           label: "GitHub",
           position: "right",
         },
