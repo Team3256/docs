@@ -57,7 +57,10 @@ If we aren’t building simple autos within the path planner, then autos should 
 
 #### Named Commands
 
-~~Named commands for autos should be exactly what the command is named in the code. They should contain the subsystem name (assuming it's a singular subsystem command) as a prefix and the rest of the command name written in camel case. Any values being passed into the command should be separated by a space. Ex. `shooter.setVelocity(100)` would be shooter setVelocity 100.~~ We now have code to do it for us. (if you really want to, [check it out](https://github.com/Team3256/Kirby_Bot_2024/blob/main/src/main/java/frc/robot/utils/NamedCommands.java))
+Named commands for autos should be exactly what the command is named in the code. They should contain the subsystem name (assuming it's a singular subsystem command) as a prefix and the rest of the command name written in camel case. Any values being passed into the command should be separated by a space. Ex. `shooter.setVelocity(100)` would be shooter setVelocity 100.
+
+
+<!-- We now have code to do it for us. (if you really want to, [check it out](https://github.com/Team3256/Kirby_Bot_2024/blob/main/src/main/java/frc/robot/utils/NamedCommands.java)) -->
 
 ## File Structure
 
