@@ -1,48 +1,30 @@
 ---
-sidebar_position: 1
 slug: /
+sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome!
 
-## Getting Started
+This is the documentation for the Team 3256 software team.
 
-Get started by **creating a new site**.
+## A foreword
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Software, like any subteam, has had the issue of maintaining knowledge through the years, and being unable to learn content outside of formal training that you can only get from experience.
 
-### What you'll need
+This documentation is an attempt to solve that issue, given software's unique position of having to learn a lot of new content every year, and having to maintain that knowledge for years to come.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Many things in this documentation should not be taken as gospel, but rather as a starting point for your own research. This documentation is not a replacement for experience, but rather a supplement to it.
 
-## Generate a new site
+## What should go here?
 
-Generate a new Docusaurus site using the **classic template**.
+Anything that you think is important to know, including content covered in formal training that you think could be expanded upon, or content that you think is important to know that isn't covered in formal training.
 
-The classic template will automatically be added to your project after you run the command:
+## How to contribute
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+This documentation is open source, and can be found [here](https://github.com/team3256/docs), and contributions are welcome.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+If you have any questions, feel free to ask in the #software channel on the team Discord server.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+If you have any questions about Docusaurus, see the [Docusaurus documentation](https://docusaurus.io/docs/), and the Docusaurus Help section in the sidebar.
