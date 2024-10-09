@@ -1,7 +1,6 @@
 {
-  "label": "Extra: Docusaurus Help",
-  "position": 3,
-  "link": {
-    "type": "generated-index"
-  }
+	"label": "Extra: Docusaurus Help",
+	"link": {
+		"type": "generated-index"
+	}
 }
