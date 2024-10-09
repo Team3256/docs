@@ -1,3 +1,6 @@
+---
+sidebar_position: 4
+---
 # FRC Software Tools
 
 We got a lot of tools. Should be self-explanatory on why.
