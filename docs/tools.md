@@ -5,7 +5,7 @@ sidebar_position: 4
 
 We got a lot of tools. Should be self-explanatory on why.
 
-## AdvantageScope
+## [AdvantageScope](https://github.com/Mechanical-Advantage/AdvantageScope)
 
 AdvantageScope is made by team 6328 Mechanical Advantage and is a popular software for viewing logs. It can read logs in WPILOG, DS log, Hoot (the format used for CTRE motors), and RLOG while also being able to view live data from NT4 (network tables) and RLOG streaming. AdvantageScope is separate from AdvantageKit (a logging framework).
 
@@ -21,33 +21,30 @@ And last but certainly not least we have AdvantageKit. AdvantageKit is where the
 
 AdvantageScope has a huge array of methods to visualize data, with the most common being the line graph. Any numerical or boolean value can be dragged onto the line graph to be visualized and compared to other values. This is especially useful when comparing logs against each other. AdvantageScope also has the potential to have 3d simulated robots and mechanisms (you can still do 2d). It also has a better console compared to the NI driver station app (it's horrible).
 
-## Driver Station
+## [Driver Station](https://docs.wpilib.org/en/stable/docs/software/driverstation/driver-station.html)
+The docs will do a better job than I can. This is used to control the robot during competition and practice. You can view battery voltage, and enable/disable the robot. Press enter to disable the robot and spacebr to E-stop the robot (E-stop means you have to restart the robot once pressed).  
 
-The docs will do a better job than I can. This is used to control the robot during competition and practice.
-
-## Pathplanner
+## [Pathplanner](https://pathplanner.dev/gui-editing-paths-and-autos.html#paths)
 
 Once again the docs are probably better + I don’t have too much experience. This is what we mainly used to make autos+paths but that could change with the recent release of choreo.
 
-## Choreo
+## [Choreo](https://sleipnirgroup.github.io/Choreo/)
 
-Choreo is used to find time-optimized trajectories for swerve robots. It requires a decent amount of computing power to solve paths and therefore cannot be generated on the fly. Here are the docs on how to use Choreo
+Choreo is used to find time-optimized trajectories for swerve robots. It requires a decent amount of computing power to solve paths and therefore cannot be generated on the fly. Choreo generates realistic trajectories for swerve with trajopt. This reduces tuning time since all the generated trajectories are supposed to be realistic (compared to pathplanner which can generate impossible trajectories). 
 
-## Shuffleboard
+## [Shuffleboard](https://docs.wpilib.org/en/stable/docs/software/dashboards/shuffleboard/index.html)
 
 Displays network table info with widgets that can be controlled within code. Slow and sometimes unreliable. Largly superseded by [Elastic](#elastic)
 
-## SmartDashboard/Glass
+## [SmartDashboard](https://docs.wpilib.org/en/stable/docs/software/dashboards/smartdashboard/index.html)/[Glass](https://docs.wpilib.org/en/stable/docs/software/dashboards/glass/index.html)
 
 SmartDashboard is a more lightweight version of Shuffleboard with not as many nice-to-have features. It displays network table info as widgets but doesn’t use a lot of resources.
- Glass is a data visualization tool used for high-performance plotting. It has a bad UI similar to one of the robot simulators.
+ Glass is a data visualization tool used for high-performance plotting. It has a bad UI similar to one of the robot simulators. When running `./gradlew simulateJava` a interface similar to Glass will show up. 
 
-One of these (I don't remember is the default app that pops up when you run `./gradlew simulateJava`)
+## [Elastic](https://github.com/Gold872/elastic-dashboard)
 
-## Elastic
+Elastic is a modern dashboard alternative to Shuffleboard. It is not meant for data visualization or log playback but instead to serve as a driver dashboard during competition. It has the same widget style as Shuffleboard but is much faster and more efficient. At the current state (6/22/24)  it is missing a few widget types from Shuffleboard. Elastic also allows for alerts, which can be used to display any errors on the driveerstation. 
 
-Elastic is a modern dashboard alternative to Shuffleboard. It is not meant for data visualization or log playback but instead to serve as a driver dashboard during competition. It has the same widget style as Shuffleboard but is much faster and more efficient. At the current state (6/22/24)  it is missing a few widget types from Shuffleboard.
+## [WIP] [Phoenix Tuner X](https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html)
 
-## [WIP] Phoenix Tuner X
-
-Phoenix Tuner X is made by CTRE and is meant to be used to interface with their hardware and can be used for tuning PID or control motors/leds within the software. The docs will do a better job than me to explain how to use it, but this is a very critical app that software uses. Phoenix Tuner is used to update firmware, license products, and set device IDs. In addition to all of this, you can view device faults and graph status signals such as velocity and voltage. It can also be used to calibrate devices such as the Pigeon 2. While you can flash PID configs (and other configs as well) to tune, it is recommended to tune via sysid (this is the link for using ctre status signals with sysid).
+Phoenix Tuner X is made by CTRE and is meant to be used to interface with their hardware and can be used for tuning PID or control motors/leds within the software. The docs will do a better job than me to explain how to use it, but this is a very critical app that software uses. Phoenix Tuner is used to update firmware, license products, and set device IDs. In addition to all of this, you can view device faults and graph status signals such as velocity and voltage. It can also be used to calibrate devices such as the Pigeon 2. While you can flash PID configs (and other configs as well) to tune, it is recommended to tune via [sysid](https://docs.wpilib.org/en/stable/docs/software/advanced-controls/system-identification/introduction.html) (this is the link for using [ctre status signals with sysid](https://v6.docs.ctr-electronics.com/en/stable/docs/api-reference/wpilib-integration/sysid-integration/index.html)). Phoenix Tuner X also allows you to control TalonFX motors through the canivore via USB which is useful for testing. You can control all CTRE devices that are on the CAN chain, and even run motors with similar control requests that you would use in code.  
