@@ -78,7 +78,7 @@ Comment **why** you are doing something, not what. The code should be easy enoug
 
 ## Command-based
 
-(Most of this documentation is stolen from Oblarg.)
+(Most of this documentation is [stolen from Oblarg](https://www.chiefdelphi.com/t/command-based-best-practices-for-2025-community-feedback/465602?u=bovlb). You should read that thread for more information, as we're not going to repeat what someone else can say better)
 Commands are a really powerful way to manage the state of the robot. In short, each subsystem can only have one command that requires it to run. Commands can then be made into groups to provide a lot of functionality and customizability. I won’t go into how command based works, but I will go over some of the more niche features and some general structure  guidelines.
 Commands should be returned from factory functions from a specific function. This improves readability and ensures that a new instance is created every time we want to bind it to something.
 
