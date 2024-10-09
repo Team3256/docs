@@ -6,17 +6,25 @@ sidebar_position: 2
 
 We use a variety of tools to manage our codebase, and this page will give you an overview of how we use them.
 
-# Linear
+## Linear
 
 Linear is a project management tool that we use to keep track of our tasks and issues. We use Linear to manage our backlog, plan our sprints, and track our progress.
 
-# Github
+## Github
 
 Github is where we store our code - it's a version control system\* that allows us to keep track of changes to our codebase, and collaborate with others.
 
 ### Version Control
 
 We use Git for version control. Git is a distributed version control system that allows us to track changes to our codebase over time. We use GitHub to host our repositories, and we use GitHub Actions for continuous integration.
+
+### Continuous integration
+
+Continuous integration is basically a fancy term for the process that's configured to run on every time code changes (i.e. on a new commit). Our current CI currently only:
+
+- Checks if the code follows consistent formatting (via [Spotless](https://github.com/diffplug/spotless))
+- Compiles our code
+- Runs the tests that we configured in our code. Testing is a whole other topic, but you don't need to worry about it because we don't do that many unit tests in our code (because you could just test if it works using the robot or sim).
 
 ### Code Review
 
@@ -33,4 +41,3 @@ However, we also have a policy of allowing the person who opened the Pull Reques
 
 </details>
 
-## Continuous Integration
