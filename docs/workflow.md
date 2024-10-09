@@ -16,7 +16,7 @@ Github is where we store our code - it's a version control system\* that allows 
 
 ### Version Control
 
-We use Git for version control. Git is a distributed version control system that allows us to track changes to our codebase over time. We use GitHub to host our repositories, and we use GitHub Actions for continuous integration.
+We use Git for version control. Git is a distributed version control system that allows us to track changes to our codebase over time. We use GitHub to host our repositories, and we use GitHub Actions for continuous integration. Ideally, we would follow the [GitHub Flow](https://docs.github.com/en/get-started/using-github/github-flow) where you would create a branch with your changes, make a pull request, [ask for reviewers](#code-review), and then get it merged. If you have multiple changes that need to be built on each other, we encourage separating your dependent changes as smaller branches off of what you wrote. This way, you can create a small pull request for every dependent feature you wrote (many small pull requests is faster to review than 1 giant pull request) which allows us to merge them one after another. This is also known as the [stacking workflow](https://www.stacking.dev/), sort of an extension of GitHub Flow.
 
 ### Continuous integration
 
